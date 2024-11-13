@@ -6,7 +6,7 @@ import (
 	"log"
 	"time"
 
-	"github.com/4jairo/webrtcFiletransfer/schema"
+	"github.com/4jairo/webrtc-filetransfer-backendBackend/schema"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	"go.mongodb.org/mongo-driver/mongo"
@@ -20,6 +20,7 @@ type MongoClient struct {
 // const MongoURI string = "mongodb://localhost:27017"
 const MongoURI string = "mongodb://mongo:27017"
 const MongoDbName string = "webrtc-filetransfer"
+const MongoReplicaSet string = "rs0"
 const MongoLastUpdateTTL time.Duration = time.Hour * 24
 
 var Mongo MongoClient
@@ -27,7 +28,7 @@ var Mongo MongoClient
 func Connect() {
 	options := options.Client().
 		ApplyURI(MongoURI).
-		SetReplicaSet("rs0")
+		SetReplicaSet(MongoReplicaSet)
 
 	ctx, cancel := context.WithTimeout(context.Background(), time.Second*30)
 	defer cancel()

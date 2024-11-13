@@ -4,10 +4,10 @@ import (
 	"log"
 	"net/http"
 
-	mongoclient "github.com/4jairo/webrtcFiletransfer/db"
-	"github.com/4jairo/webrtcFiletransfer/handler"
-	"github.com/4jairo/webrtcFiletransfer/routes"
-	routesWs "github.com/4jairo/webrtcFiletransfer/routes/ws"
+	mongoclient "github.com/4jairo/webrtc-filetransfer-backendBackend/db"
+	"github.com/4jairo/webrtc-filetransfer-backendBackend/handler"
+	"github.com/4jairo/webrtc-filetransfer-backendBackend/routes"
+	routesWs "github.com/4jairo/webrtc-filetransfer-backendBackend/routes/ws"
 	"github.com/gorilla/mux"
 	"github.com/rs/cors"
 )

@@ -1,4 +1,4 @@
-module github.com/4jairo/webrtcFiletransfer
+module github.com/4jairo/webrtc-filetransfer-backendBackend
 
 go 1.22.3
 

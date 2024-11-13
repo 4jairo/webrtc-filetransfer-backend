@@ -6,9 +6,9 @@ import (
 	"errors"
 	"net/http"
 
-	mongoclient "github.com/4jairo/webrtcFiletransfer/db"
-	"github.com/4jairo/webrtcFiletransfer/handler"
-	"github.com/4jairo/webrtcFiletransfer/schema"
+	mongoclient "github.com/4jairo/webrtc-filetransfer-backendBackend/db"
+	"github.com/4jairo/webrtc-filetransfer-backendBackend/handler"
+	"github.com/4jairo/webrtc-filetransfer-backendBackend/schema"
 	"github.com/gorilla/mux"
 )
 

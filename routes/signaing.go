@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"net/http"
 
-	mongoclient "github.com/4jairo/webrtcFiletransfer/db"
-	"github.com/4jairo/webrtcFiletransfer/schema"
+	mongoclient "github.com/4jairo/webrtc-filetransfer-backendBackend/db"
+	"github.com/4jairo/webrtc-filetransfer-backendBackend/schema"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 )
 
