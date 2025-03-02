@@ -3,8 +3,7 @@
 Simple HTTP API for interacting with a MongoDB database that stores the WebRTC signaling and files metadata.
 
 
-Demo with [frontend](https://github.com/4jairo/webrtc-filetransfer-frontend) avaliable on <https://filetransfer.4jairo.tech>
-
+Frontend: <https://github.com/4jairo/webrtc-filetransfer-frontend>
 
 - **Clone this Repository**
 
